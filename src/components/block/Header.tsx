@@ -49,15 +49,15 @@ const HeaderWrap1 = styled.section`
     `
 
         const Logo = styled.div`
-            height: 50px;
-            width: 50px;
+            height: 45px;
+            width: 45px;
             border-radius: 50%;
             background-color: whitesmoke;
             color: #853EF4;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 800;
             `
         
@@ -65,14 +65,15 @@ const HeaderWrap1 = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 30px;
             height: inherit;
             `
 
                 const NavLink = styled.a`
                     color: whitesmoke;
                     font-weight: 500;
-                    text-decoration: none;                    
+                    text-decoration: none; 
+                    cursor: pointer;                   
                     `
 
         const HeaderSignUp = styled.button`
