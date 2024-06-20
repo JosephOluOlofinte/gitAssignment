@@ -57,9 +57,10 @@ export default Footer;
 const FooterWrap = styled.section`
     width: 100%;
     height: 100%;
-    margin-top: 15vh;
+    padding-top: 15vh;
     display: flex;
     justify-content: center;
+    background-color: #020000dc;
 `
 
 const FooterCont = styled.section`
@@ -76,6 +77,7 @@ const FooterHead = styled.h3`
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 25px;
+    color: whitesmoke;
 `
 
 const FooterLink = styled.div`
