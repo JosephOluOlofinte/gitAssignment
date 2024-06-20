@@ -14,4 +14,6 @@ const HeroWrap = styled.section`
     margin-top: -20px;
     border-radius: 20px 20px 0 0;
     background-color: whitesmoke;
+    /* margin-top: -20px works in tandem with the HeaderWrap
+       see Header.tsx and headerss.png in assets for clarification*/
 `

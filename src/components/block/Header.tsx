@@ -5,7 +5,16 @@ const Header = () => {
     return(
 
         <HeaderWrap1>
-            <HeaderWrap2></HeaderWrap2>
+            <HeaderContain>
+                <Logo>B</Logo> 
+                <Navs>
+                    <NavLink>Subjects</NavLink>
+                    <NavLink>Pricing</NavLink>
+                    <NavLink>About us</NavLink>
+                    <NavLink>FAQ</NavLink>
+                </Navs>
+                <HeaderSignUp> Sign up</HeaderSignUp>
+            </HeaderContain>
         </HeaderWrap1>
     )
 }
@@ -16,17 +25,60 @@ const HeaderWrap1 = styled.section`
     height: 80px;
     width: 100%;
     background-color: #853EF4;
+    display: flex;
+    justify-content: center;
+    align-items: top;
     /* this frame is responsible for the curved edges 
        the Hero section overlaps it with a margin of -20px 
-       80px - 20px = 60px (the height of the actual header below)
+       80px - 20px = 60px (the height of HeaderContain below)
        hero gets a height of 100vh - 60px. this initially causes a longer hero
        with a scrollbar
        the value margin: -20px then brings the hero back up, eliminating the scrollbar
-       change the background color of HeaderWrap2 to differentiate them */
+       change the background color of HeaderWrap2 to differentiate them
+       align-items: top prevents HeaderContain from overlapping the Hero */
 `
 
-    const HeaderWrap2 = styled.section`
+    const HeaderContain = styled.section`
         height: 60px;
-        width: 100%;
+        width: 90%;
         background-color: #853EF4;
+        /* background-color: black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     `
+
+        const Logo = styled.div`
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: whitesmoke;
+            color: #853EF4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-weight: 800;
+            `
+        
+        const Navs = styled.nav`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            height: inherit;
+            `
+
+                const NavLink = styled.a`
+                    color: whitesmoke;
+                    font-weight: 500;
+                    text-decoration: none;                    
+                    `
+
+        const HeaderSignUp = styled.button`
+            background-color: whitesmoke;
+            border-radius: 10px;
+            border: 0;
+            color: #853EF4;
+            padding: 10px 20px;
+        `
