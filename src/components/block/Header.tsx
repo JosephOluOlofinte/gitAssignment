@@ -5,10 +5,15 @@ const Header = () => {
     return(
 
         <HeaderWrap>
+            ndsn
         </HeaderWrap>
     )
 }
 
 export default Header;
 
-const HeaderWrap = styled.section``
+const HeaderWrap = styled.section`
+    height: 70px;
+    width: 100%;
+    background-color: #853EF4;
+`
