@@ -89,9 +89,10 @@ a {
     color: #B2B2B2;
     font-weight: 300;
     font-size: 14px;
+    transition: transform 0.3s;
     }
 
 :hover {
-    color: #000000;
+    transform: scale(1.10); 
 }
 `

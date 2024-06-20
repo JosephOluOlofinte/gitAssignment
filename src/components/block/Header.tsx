@@ -8,10 +8,10 @@ const Header = () => {
             <HeaderContain>
                 <Logo>B</Logo> 
                 <Navs>
-                    <NavLink>Subjects</NavLink>
-                    <NavLink>Pricing</NavLink>
-                    <NavLink>About us</NavLink>
-                    <NavLink>FAQ</NavLink>
+                    <a href="#">Subjects</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About us</a>
+                    <a href="#">FAQ</a>
                 </Navs>
                 <HeaderSignUp> Sign up</HeaderSignUp>
             </HeaderContain>
@@ -65,16 +65,28 @@ const HeaderWrap1 = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
             height: inherit;
-            `
 
-                const NavLink = styled.a`
+                a {
                     color: whitesmoke;
                     font-weight: 500;
                     text-decoration: none; 
-                    cursor: pointer;                   
-                    `
+                    cursor: pointer;
+                    transition: transform 0.3s;               
+                }
+
+                :hover {
+                    transform: scale(1.15);
+                }
+            `
+
+                // const NavLink = styled.a`
+                //     color: whitesmoke;
+                //     font-weight: 500;
+                //     text-decoration: none; 
+                //     cursor: pointer;                   
+                //     `
 
         const HeaderSignUp = styled.button`
             background-color: whitesmoke;
